@@ -11,13 +11,13 @@ const industries = [
 
 export default function IndustriesPage() {
   return (
-    <main className="max-w-5xl mx-auto py-16 px-4">
-      <h1 className="text-4xl font-bold mb-8 text-center">Industries We Serve</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <main className="max-w-5xl mx-auto py-12 sm:py-16 px-4 sm:px-6">
+      <h1 className="text-3xl sm:text-4xl font-bold mb-8 text-center">Industries We Serve</h1>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
         {industries.map((industry) => (
           <div key={industry.name} className="bg-white rounded-lg shadow p-6 hover:shadow-lg transition">
-            <h2 className="text-2xl font-semibold mb-2">{industry.name}</h2>
-            <p className="text-gray-600">{industry.description}</p>
+            <h2 className="text-lg sm:text-2xl font-semibold mb-2">{industry.name}</h2>
+            <p className="text-gray-600 text-sm sm:text-base">{industry.description}</p>
           </div>
         ))}
       </div>
