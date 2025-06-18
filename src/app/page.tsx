@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Image from 'next/image';
 
 const services = [
   {
@@ -22,7 +21,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="flex-1 flex flex-col justify-center items-center text-center py-24 px-4 bg-gradient-to-br from-blue-50 to-white animate-fade-in">
         <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight text-blue-900">Elevate Your Business<br />with Expert Consulting</h1>
-        <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl">Unlock your company's potential with tailored strategies, digital transformation, and actionable insights from our experienced consultants.</p>
+        <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl">Unlock your company&apos;s potential with tailored strategies, digital transformation, and actionable insights from our experienced consultants.</p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link href="#services" scroll={false} className="bg-blue-700 text-white px-8 py-3 rounded font-semibold hover:bg-blue-800 transition-transform duration-200 transform hover:scale-105 shadow-lg">Our Services</Link>
           <Link href="/contact" className="border border-blue-700 text-blue-700 px-8 py-3 rounded font-semibold hover:bg-blue-50 transition-transform duration-200 transform hover:scale-105 shadow">Contact Us</Link>
